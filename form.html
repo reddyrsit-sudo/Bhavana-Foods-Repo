@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    
+
+</head>
+<body>
+    <h2>Student Information Form</h2>
+    <!-- <form> -->
+        <label>Student marks:</label>
+        <input type="text" id="simple_text" name="marks">
+        <br>
+        <br>
+        
+        <button onclick="getResult()">Get Result</button>
+
+        <div id="result_div"></div>
+    <!-- </form> -->
+
+
+    
+
+    <script>
+       
+
+         function getResult(){
+           let sample_text = document.getElementById('simple_text').value;
+           let result_div = document.getElementById('result_div');
+           result_div.innerHTML = ``;
+        //    console.log("func");
+            for ( let i=1; i<=10; i++){
+                console.log(sample_text +'<br>');
+                result_div.append(sample_text +`<br>`);
+            }
+         }
+
+        
+         
+
+
+    </script>
+</body>
+</html>

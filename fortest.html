@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple Form</title>
+    
+</head>
+<body>
+  <h2>Please add numbers Form</h2>
+    <!-- <form> -->
+        <label>For loop:</label>
+        <input type="text" id="simple_text"  name="numbers">
+        <br>
+        <br>
+        <button onclick="getfor()">result</button>
+        
+       <pre id="output"></pre>
+    <!-- </form> -->
+ 
+    <script>
+         
+     function getfor() {
+        let n = 5;
+        let str = "";
+
+        // Upper part of diamond
+        for (let i = 1; i <= n; i++) {
+          // spaces
+          for (let j = i; j < n; j++) {
+            str += "Sai";
+          }
+          // stars
+          for (let k = 1; k <= (2 * i - 1); k++) {
+            str += "Suma";
+          }
+          str += "\n";
+        }
+
+        // Lower part of diamond
+        for (let i = n - 1; i >= 1; i--) {
+          // spaces
+          for (let j = n; j > i; j--) {
+            str += "Sai";
+          }
+          // stars
+          for (let k = 1; k <= (2 * i - 1); k++) {
+            str += "suma";
+          }
+          str += "\n";
+        }
+
+        console.log(str);
+
+       document.getElementById("output").innerHTML = str;
+     }
+
+
+    //  let text = "Hello";
+    // console.log(text.split("").reverse().join(""));
+
+    function reverseString() {
+        let str = "Koduru sai suma";
+        let rev = "";
+
+        for (let i = str.length - 1; i >= 0; i--) {
+            rev += str[i];   // accessing characters directly
+        }
+
+        console.log(rev);
+    }
+    reverseString();
+
+    function reverseString() {
+        let str = "Koduru sai suma";
+        let rev = "";
+
+        for (let i = str.length - 1; i >= 0; i--) {
+            rev += str[i];   // accessing characters directly
+        }
+
+        console.log(rev);
+    }
+    reverseString();
+    let marks = [80, 85, 90, 75];
+    let names = ["Suma","Arjun", "pavan", "Divya"];
+    
+
+    console.log(names);
+    console.log(names.length);
+    
+
+
+    let numbers = [1, 2, 3, 4];
+
+    let squares = numbers.map(function(num) {
+      return num + 9;
+    });
+
+    console.log(squares);   
+
+
+
+    </script>
+</body>
+</html>
+</html>

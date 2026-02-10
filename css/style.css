@@ -1,0 +1,126 @@
+.menu_right{
+    margin-left: auto;
+}
+.heading_section{
+    text-align: center;
+    margin: 20px;
+    padding: 60px;
+}
+.image_box{
+    width: 476px;
+    height: 718px;
+}
+.image_box img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.curved_img_box {
+  /* width:500px;
+  height:200px; */
+  /* background:red; */
+  height: 500px;
+  position:relative;
+  overflow:hidden;
+}
+.curved_img_box:after, 
+.curved_img_box:before {
+  content:'';
+  background:white;
+  position:absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height:50px;
+  border-radius:0 0 50% 50%;
+}
+.curved_img_box:after {
+  top:auto;
+  bottom: 0;
+  border-radius:50% 50% 0 0 ;
+}
+
+.curved_section{
+    width: 600px;
+    height: 400px;
+    background: rebeccapurple;
+    position: relative;
+}
+
+.curved_section::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 0 0 50% 50%;
+
+}
+
+.curved_section::after{
+    content: ' ';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 50% 50% 0 0;
+
+}
+.img_section{
+    height: 565px;
+    width: 444px;
+    background-color: #333737;
+    overflow: hidden;
+}
+.img_box{
+    width: 444px;
+    height: 366px;
+    img{
+        max-width: 100%;
+        height: 100%;
+    /* max-height: 100%; */
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+.text_box{
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+a{
+    color: #fff !important;
+}
+.icon_box{
+    display: inline-block;
+    margin-left: 25px;
+    padding: 20px;
+    color: #fff;
+    background-color: #4e84c4;
+    border-radius: 50%;
+}
+
+.img_section:hover{
+    cursor: grab;
+    img{
+        transform: scale(1.1);
+        overflow: hidden;
+    }
+    i {
+    transform: translateX(50%);
+    }
+}
+
+.mt-20{
+    margin: 20px;
+    padding: 20px;
+}
